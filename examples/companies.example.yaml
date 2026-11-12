@@ -1,0 +1,12 @@
+# Fontes de exemplo para `devjob companies import examples/companies.example.yaml`.
+# São quadros públicos usados apenas para testar a conexão com cada provedor;
+# troque pelos quadros das empresas que interessam a você.
+- provider: greenhouse
+  slug: figma
+  name: Figma
+- provider: lever
+  slug: leverdemo        # site de demonstração citado na documentação da Lever
+  name: Lever Demo
+- provider: inhire
+  slug: carreiras        # página de carreiras da própria InHire
+  name: InHire

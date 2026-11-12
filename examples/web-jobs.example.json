@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Senior Backend Engineer",
+    "company": "Example Co",
+    "url": "https://example.com/careers/senior-backend-engineer",
+    "location": "Remote - Brazil",
+    "work_model": "remote",
+    "description": "Requirements:\n- Java\n- Spring Boot\n- Kafka\nNice to have:\n- Kubernetes",
+    "salary": {"min": 18000, "max": 22000, "currency": "BRL", "period": "month", "evidence": "R$ 18.000 a R$ 22.000/mês"},
+    "found_via": "web search"
+  }
+]

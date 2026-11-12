@@ -1,0 +1,80 @@
+# Design system do template minimal-professional.
+# Única fonte de fonte, tamanho, margem, cor e espaçamento.
+# A IA escolhe o conteúdo. O renderizador aplica este arquivo.
+# Ajustes são globais (scale, formato de página). Não há tamanho por seção fora daqui.
+id: minimal-professional
+version: 2
+layout:
+  template: minimal-professional
+  format: A4
+  formats: [A4, Letter]
+  orientation: portrait
+  columns: 1
+  background: "#FFFFFF"
+  margins_cm: 1.8
+  dividers: true
+  images: false
+  icons: false
+  charts: false
+  skill_bars: false
+typography:
+  font: Arial
+  # Uma só família no documento. A primeira instalada desta lista é a reserva.
+  fallback: Liberation Sans
+  fallbacks: [Calibri, Aptos, Liberation Sans]
+  line_height: 1.15
+  # 1 mantém os tamanhos abaixo. Um valor menor não pode levar o corpo abaixo de min_body_pt.
+  scale: 1
+  min_body_pt: 10
+  name:
+    size_pt: 20
+    bold: true
+  professional_title:
+    size_pt: 11
+    bold: false
+  section_title:
+    size_pt: 11.5
+    bold: true
+  company:
+    size_pt: 11
+    bold: true
+  # Cargo: o tema fixa regular. Negrito fica na empresa e nos títulos.
+  role:
+    size_pt: 10.5
+    bold: false
+  body:
+    size_pt: 10.5
+    bold: false
+  skills:
+    size_pt: 10
+    bold: false
+  education:
+    size_pt: 10.5
+    bold: false
+  contact:
+    size_pt: 9
+    bold: false
+  date:
+    size_pt: 9.5
+    bold: false
+# Títulos de seção que usam um estilo próprio. Os demais usam o corpo.
+section_styles:
+  skills:
+    - Competências técnicas
+    - Technical skills
+  education:
+    - Formação
+    - Education
+spacing_pt:
+  after_name: 4
+  after_contacts: 12
+  before_sections: 12
+  after_titles: 5
+  between_experiences: 9
+  between_bullets: 2
+  between_paragraphs: 5
+colors:
+  primary: "#202020"
+  secondary: "#555555"
+  divider: "#D9D9D9"
+  background: "#FFFFFF"

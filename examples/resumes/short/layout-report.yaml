@@ -1,0 +1,7 @@
+ok: true
+errors: []
+warnings: []
+pages: 1
+previews:
+- examples\resumes\short\preview-1.png
+note: A validação não afirma compatibilidade universal com sistemas ATS.

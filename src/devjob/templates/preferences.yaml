@@ -1,0 +1,61 @@
+# DevJob Agent — preferências profissionais
+#
+# eliminatory: true  -> requisito eliminatório. A vaga é descartada quando a
+#                       informação é conhecida e viola a regra. Informação
+#                       ausente nunca elimina: vira "requisito incerto".
+# eliminatory: false -> preferência negociável. Afeta apenas a pontuação.
+#
+# Valores aceitos:
+#   seniority.levels: intern | junior | mid | senior | staff | principal | lead | manager
+#   work_model.accepted: remote | hybrid | onsite
+#   contract_types.accepted: clt | pj | international | contractor
+#   salary.minimums[].period: month | year | hour
+#   languages.working[].level: A1 | A2 | B1 | B2 | C1 | C2 | native
+
+target_roles: []            # ex.: [Backend Engineer, Engenheiro de Software Backend]
+seniority:
+  levels: []                # ex.: [senior, staff]
+  eliminatory: false
+primary_stack: []           # ex.: [Java, Spring Boot]
+specializations: []         # ex.: [observabilidade]
+hard_skills_to_use: []      # tecnologias que você quer usar no dia a dia
+soft_skills: []             # ex.: [Mentoria, Comunicação]
+location:
+  country: ""               # ex.: BR
+  city: ""                  # ex.: São Paulo
+  accept_relocation: false
+  only_country: false       # true descarta toda vaga que não indica esse país
+  focus: mixed              # home | abroad | mixed
+  home_share: 70            # no modo mixed, percentual da lista nesse país; o resto pode ser de fora
+  eliminatory: true
+work_model:
+  accepted: [remote]
+  eliminatory: true
+contract_types:
+  accepted: [clt, pj, international]
+  eliminatory: false
+salary:
+  eliminatory: true
+  minimums: []              # ex.: - {contract: clt, currency: BRL, amount: 18000, period: month}
+languages:
+  working: []               # ex.: - {language: en, level: C1}
+  eliminatory: false
+employment:
+  status: unknown          # unknown | employed | unemployed. Confirmado no setup; a última experiência não vira emprego atual.
+  current:
+    name: ""
+    aliases: []            # grafias confirmadas da mesma empresa, não do grupo econômico
+  previous: []             # - {name: "", aliases: []}
+  exclude_past: true       # ex-empregadores ficam de fora até o usuário mudar
+  allowed_past: []         # exceções individuais; o empregador atual não entra aqui
+  exclude_current: true    # obrigatório. O validador recusa false.
+companies:
+  desired: []
+  blocked: []              # outras empresas bloqueadas, além do histórico
+  priority: []             # carreiras consultadas junto com a busca geral; não limita a busca às demais
+sources:
+  priority: [inhire, greenhouse]  # estas fontes ocupam a lista antes das demais; [] não prioriza
+dealbreakers:
+  keywords: []              # termos que eliminam a vaga, ex.: ["security clearance"]
+nice_to_have:
+  keywords: []              # termos que somam pontos, ex.: [kafka, "event-driven"]

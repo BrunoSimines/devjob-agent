@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Dados pessoais: nunca versionar.
+# O diretório padrão de dados fica fora do repositório (~/.devjob-agent),
+# mas estes padrões evitam commits acidentais caso DEVJOB_HOME aponte para cá.
+.devjob-agent/
+/data/
+/resumes/
+/applications/
+/imports/
+*.db
+*.db-journal
+*.sqlite
+/profile.md
+/profile.draft.md
+/preferences.yaml
+/config.yaml
+/install.json
+*.pdf
+*.docx
+
+# Editores e SO
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

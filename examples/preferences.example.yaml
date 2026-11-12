@@ -1,0 +1,40 @@
+# Exemplo fictício para "Backend Java Sênior, remoto, acima de R$ 18 mil".
+target_roles: [Backend Engineer, Engenheiro de Software Backend, Desenvolvedor Java]
+seniority:
+  levels: [senior]
+  eliminatory: false
+primary_stack: [Java, Spring Boot]
+specializations: []
+hard_skills_to_use: [Kafka, PostgreSQL]
+soft_skills: []
+location:
+  country: BR
+  city: São Paulo
+  accept_relocation: false
+  only_country: false
+  focus: mixed
+  home_share: 70
+  eliminatory: true
+work_model:
+  accepted: [remote]
+  eliminatory: true
+contract_types:
+  accepted: [clt, pj, international]
+  eliminatory: false
+salary:
+  eliminatory: true
+  minimums:
+    - {contract: clt, currency: BRL, amount: 18000, period: month}
+    - {contract: pj, currency: BRL, amount: 22000, period: month}
+    - {contract: international, currency: USD, amount: 60000, period: year}
+languages:
+  working:
+    - {language: en, level: C1}
+  eliminatory: false
+companies:
+  desired: []
+  blocked: []
+dealbreakers:
+  keywords: []
+nice_to_have:
+  keywords: [event-driven]

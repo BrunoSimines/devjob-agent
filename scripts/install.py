@@ -131,7 +131,7 @@ def main() -> int:
     command = command_line(executable, home) if executable else f'{python.as_posix()} -m devjob'
     install_skill(dirs, command)
 
-    info = {"version": "0.1.0", "repo": str(REPO), "python": str(python), "command": command,
+    info = {"version": "1.0.0", "repo": str(REPO), "python": str(python), "command": command,
             "skill_dirs": [str(d) for d in dirs], "home": str(home),
             "installed_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     (home / "install.json").write_text(json.dumps(info, indent=2), encoding="utf-8")

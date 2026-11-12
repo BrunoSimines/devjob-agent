@@ -47,7 +47,7 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "timeout_seconds": 20,
         "min_interval_seconds": 1.0,
         "max_retries": 2,
-        "user_agent": "devjob-agent/0.1 (local personal job search assistant)",
+        "user_agent": "devjob-agent/1.0 (local personal job search assistant)",
     },
     "search": {
         "cache_ttl_hours": 6,

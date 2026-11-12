@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "devjob-agent"
-version = "0.1.0"
+version = "1.0.0"
 description = "Assistente de carreira local e open source: perfil profissional, busca de vagas, biblioteca de currículos e candidaturas preparadas. Skill para Claude Code e Cursor."
 readme = "README.md"
 license = "MIT"
